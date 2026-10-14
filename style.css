@@ -1,0 +1,41 @@
+/* Smooth Scroll Adjustments */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Offset Scroll position due to fixed Navbar */
+section, header {
+    scroll-margin-top: 56px;
+}
+
+/* Home Section Layout Tweaks */
+.profile-img {
+    border: 8px solid #fff;
+    max-width: 280px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+}
+
+/* Project Card Hover Animation Lift */
+.project-card, .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Active Nav State Text Highlights */
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
